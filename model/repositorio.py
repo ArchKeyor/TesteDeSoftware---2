@@ -53,7 +53,7 @@ class RepositorioCSV:
             with open(self.filepath, newline="", encoding="utf-8") as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row["id"] == id_entity:
+                    if row["id"] == id:
                         writer.writerow(nova_entidade.to_dict())
                     else:
                         writer.writerow(row)
@@ -71,7 +71,7 @@ class RepositorioCSV:
             with open(self.filepath, newline="", encoding="utf-8") as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row["id"] != id_entity:
+                    if row["id"] != id:
                         writer.writerow(row)
 
         shutil.move(temp_path, self.filepath)
