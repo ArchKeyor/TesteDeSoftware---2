@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linters & Formatters
+.ruff_cache/
+.mypy_cache/
+
+# VS Code workspace files (keep settings and extensions)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Temporary files & data
+*.tmp
+arquivos/*.csv
